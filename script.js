@@ -2,6 +2,7 @@ let addBtn = document.querySelector('.add-btn')
 let modalcont = document.querySelector('.modal-cont')
 let maincont = document.querySelector('.main-cont')
 let textArea = document.querySelector('.textArea-cont')
+let listcolor = document.querySelectorAll('.priority-color')
 let addBtnFlag = false
 addBtn.addEventListener('click',function(){
     addBtnFlag = !addBtnFlag
@@ -31,5 +32,7 @@ modalcont.addEventListener('keydown',function(e){
       CreateTicket(task,id)
       modalcont.style.display = 'none'
       addBtnFlag = false
+      textArea.value = ""
     }
 })
+

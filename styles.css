@@ -123,3 +123,7 @@ border: none;
 font-size: 3rem;
 outline: none;
 }
+
+.active{
+    border: 2px solid red;
+}
