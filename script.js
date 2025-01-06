@@ -3,6 +3,7 @@ let modalcont = document.querySelector('.modal-cont')
 let maincont = document.querySelector('.main-cont')
 let textArea = document.querySelector('.textArea-cont')
 let listcolor = document.querySelectorAll('.priority-color')
+let removeBtn = document.querySelector('.remove-btn')
 let addBtnFlag = false
 
 // modal task color//
@@ -48,4 +49,23 @@ listcolor.forEach(function(colorElement){
     colorElement.classList.add('active')
      modaltaskcolor = colorElement.classList[0]
   })
+})
+
+// delete button active //
+let active = false
+removeBtn.addEventListener('click',function(){
+      active = !active
+      console.log(active)
+      if (active){
+         removeBtn.style.color = 'red'
+      }
+      else{
+        removeBtn.style.color = 'white'
+      }
+})
+
+//deleteticks //
+AllTickets = document.querySelectorAll('.ticket-cont')
+AllTickets.forEach(function(tickets){
+  
 })
